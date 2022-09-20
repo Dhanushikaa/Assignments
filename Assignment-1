@@ -1,0 +1,64 @@
+# Data types : List, Tuple, Dictionary
+#List
+List1=[1,"forever",2022,True,"tree"]
+List_2=["syntax",22,"python",56,"run time"]
+print(List1)
+#indexing
+print(List_2[3]) # for index=5 out of range error occurs
+
+#update
+List1[0]=9
+List1[1]=List_2[0]
+print(List1)
+
+#append and insert
+List_2.append("hello")
+print(List_2)
+List1.append(False)
+print(List1)
+List1.insert(4,"inserted")
+print(List1)
+
+#delete
+List1.pop()
+print(List1)
+del List_2[1]
+print(List_2)
+print(len(List_2))
+
+#Slicing
+print(List1[1:4:2])
+print(List_2[3:1:-1])
+
+#Tuple
+Tup1=("hello",1024,2022,"idle",False)
+Tup_2=("semantics",33,"error",90)
+print(Tup1)
+print(Tup_2)
+#indexing
+print(Tup_2[3]) # for index=4 out of range error occurs
+
+print(Tup1[::-1]) #Reverses the tuple through slicing
+
+#Dictionary
+Dict={
+    "Name":"John",
+    "Position":"Manager",
+    "Salary in k":30
+}
+print(Dict)
+Dict["Salary in k"]=45
+del Dict["Position"]
+print(Dict)
+
+Dict1={
+    "Name":"Millie",
+    "Class": 2,
+    "Subject":5,
+    "Exam": "yes"
+}
+print(Dict1)
+Dict1["Class"]=4
+del Dict1["Exam"]
+print(Dict1)
+print(type(Dict1["Class"]))
